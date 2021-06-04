@@ -2346,7 +2346,6 @@ input, select, textarea {
 					-ms-flex-shrink: 0;
 					flex-shrink: 0;
 					margin-left: 3.5rem;
-					width: 600px;
 				}
 
 				.panel > .inner.columns > :first-child {
