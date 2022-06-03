@@ -69,7 +69,9 @@ var files = (function () {
         "instagram.txt": "https://instagram.com/hackatoan/",
         "twitter.txt": "https://twitter.com/hcktoa/",
         "merch.txt": "https://store.streamelements.com/hackatoa",
-        "donate.txt": "https://streamelements.com/hackatoa/tip"  
+        "donate.txt": "https://streamelements.com/hackatoa/tip",
+        "minecraft.txt": "I have a minecraft server this is crossplay with java and bedrock \nJava: mc.hktoan.ml \n bedrock: bedrock.hktoan.ml \n there is also a map of the server at map.hktoan.ml",
+        "urls.txt": "List of all my domain urls: \n hktoan.ml : this website \n merch.hktoan.ml : goes to my merch site \n donate.hktoan.ml : goes to my donation site"
     };
     return {
         getInstance: function (options) {
