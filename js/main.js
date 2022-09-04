@@ -69,7 +69,7 @@ var files = (function () {
         "instagram.txt": "https://instagram.com/_baecob/",
         "twitter.txt": "https://twitter.com/hcktoa/",
         "merch.txt": "https://hackatoa.ml/merch",
-        "donate.txt": "https://donate.hktoan.ml/",
+        "donate.txt": "https://donate.hackatoa.ml/",
         "minecraft.txt": "I have a minecraft server this is crossplay with java and bedrock \nJava: mc.hackatoa.ml \n bedrock: bedrock.hackatoa.ml \n there is also a map of the server at map.hackatoa.ml",
         "urls.txt": "List of all my domain urls: \n hackatoa.ml : this website \n hackatoa.ml/merch : goes to my merch site \n donate.hackatoa.ml : goes to my donation site"
     };
