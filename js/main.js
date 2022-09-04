@@ -62,11 +62,11 @@ var files = (function () {
     };
     Singleton.defaultOptions = {
         "about.txt": "@@@@@@@@@@@@@@@&#BGGPP555555PPGGB#&@@@@@@@@@@@@@@@\n@@@@@@@@@@@&#GP55555555555555555555PG#&@@@@@@@@@@@\n@@@@@@@@&BP5555555555555555555555555555PB&@@@@@@@@\n@@@@@@&G5Y55555555555555555555555555555555G&@@@@@@\n@@@@@B5Y5555555555555555555555555555555555Y5B@@@@@\n@@@&PY55555555555555555555555555555555555555YP&@@@\n@@#5Y555555555555555555YY5555555Y5P5555555YY5Y5#@@\n@&5Y55555555555555555Y5BP5Y555YYP&@B5Y5YYPBG5YY5&@\n@PY55555555555555555YP&@@#P55Y5B@@@@#5YP#@@@&BPY5@\nBY5555555555555555Y5G@@@@@@B5P&@@@@@@##@@@@@@@@#PB\nP5555555555555555YP#@@@@@@@#PG&@@@@@@@@@@@@@@@@@@&\n55555555555555YY5B@@@@@@@@@@BPG&@@@@@@@@@@@@@@@@@@\n55555555555YY5PB&@@@@@@@@@@@@BGG&@@@@@@@@@@@@@@@@@\nP5555555YY5PB&@@@@@@@@@@@@@@@@&BG#&@@@@@@@@@@@@@@@\nBYYY555PG#&@@@@@@@@@@@@@@@@@@@@@&BB#&@@@@@@@@@@@@@\n@BB##&&@@@@@@@@@@@@@@@@@@@@@@@@@@@&###&&@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&&&&&&@@@@@@@\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ \n\nHackatoa: Gamer, Content Creator, Developer \n MEMO:  Hello, my name is Jacob. I enjoy doing content creation, progamming, and merchandising in my spare time. I've always enjoyed computer stuff like coding, videogames, robotics, and other cool stuff. Out side of computers i always have enjoyed football, basketball, and biking.",
-        "contact.txt": "hackatoa@hktoan.ml",
+        "contact.txt": "me@hackatoa.ml",
         "discord.txt": "https://discord.com/invite/zQVUqubh7h",
         "twitch.txt": "https://www.twitch.tv/hackatoa/",
         "youtube.txt": "https://youtube.com/hackatoa/",
-        "instagram.txt": "https://instagram.com/hackatoan/",
+        "instagram.txt": "https://instagram.com/_baecob/",
         "twitter.txt": "https://twitter.com/hcktoa/",
         "merch.txt": "https://hackatoa.ml/merch",
         "donate.txt": "https://donate.hktoan.ml/",
