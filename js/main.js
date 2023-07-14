@@ -62,16 +62,16 @@ var files = (function () {
     };
     Singleton.defaultOptions = {
         "about.txt": "@@@@@@@@@@@@@@@&#BGGPP555555PPGGB#&@@@@@@@@@@@@@@@\n@@@@@@@@@@@&#GP55555555555555555555PG#&@@@@@@@@@@@\n@@@@@@@@&BP5555555555555555555555555555PB&@@@@@@@@\n@@@@@@&G5Y55555555555555555555555555555555G&@@@@@@\n@@@@@B5Y5555555555555555555555555555555555Y5B@@@@@\n@@@&PY55555555555555555555555555555555555555YP&@@@\n@@#5Y555555555555555555YY5555555Y5P5555555YY5Y5#@@\n@&5Y55555555555555555Y5BP5Y555YYP&@B5Y5YYPBG5YY5&@\n@PY55555555555555555YP&@@#P55Y5B@@@@#5YP#@@@&BPY5@\nBY5555555555555555Y5G@@@@@@B5P&@@@@@@##@@@@@@@@#PB\nP5555555555555555YP#@@@@@@@#PG&@@@@@@@@@@@@@@@@@@&\n55555555555555YY5B@@@@@@@@@@BPG&@@@@@@@@@@@@@@@@@@\n55555555555YY5PB&@@@@@@@@@@@@BGG&@@@@@@@@@@@@@@@@@\nP5555555YY5PB&@@@@@@@@@@@@@@@@&BG#&@@@@@@@@@@@@@@@\nBYYY555PG#&@@@@@@@@@@@@@@@@@@@@@&BB#&@@@@@@@@@@@@@\n@BB##&&@@@@@@@@@@@@@@@@@@@@@@@@@@@&###&&@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&&&&&&@@@@@@@\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ \n\nHackatoa: Gamer, Content Creator, Developer \n MEMO:  Hello, my name is Jacob. I enjoy doing content creation, progamming, and merchandising in my spare time. I've always enjoyed computer stuff like coding, videogames, robotics, and other cool stuff. Out side of computers i always have enjoyed football, basketball, and biking.",
-        "contact.txt": "me@hackatoa.ml",
+        "contact.txt": "me@hackatoa.com",
         "discord.txt": "https://discord.com/invite/zQVUqubh7h",
         "twitch.txt": "https://www.twitch.tv/hackatoa/",
         "youtube.txt": "https://youtube.com/hackatoa/",
         "instagram.txt": "https://instagram.com/_baecob/",
         "twitter.txt": "https://twitter.com/hcktoa/",
-        "merch.txt": "https://hackatoa.ml/merch",
-        "donate.txt": "https://donate.hackatoa.ml/",
-        "minecraft.txt": "I have a minecraft server this is crossplay with java and bedrock \nJava: mc.hackatoa.ml \n bedrock: bedrock.hackatoa.ml \n there is also a map of the server at map.hackatoa.ml",
-        "urls.txt": "List of all my domain urls: \n hackatoa.ml : this website \n hackatoa.ml/merch : goes to my merch site \n donate.hackatoa.ml : goes to my donation site"
+        "merch.txt": "https://hackatoa.com/merch",
+        "donate.txt": "https://donate.hackatoa.com/",
+        "minecraft.txt": "I have a minecraft server this is crossplay with java and bedrock \nJava: mc.hackatoa.com \n bedrock: bedrock.hackatoa.com \n there is also a map of the server at map.hackatoa.com",
+        "urls.txt": "List of all my domain urls: \n hackatoa.com : this website \n hackatoa.com/merch : goes to my merch site \n donate.hackatoa.com : goes to my donation site"
     };
     return {
         getInstance: function (options) {
