@@ -3726,9 +3726,10 @@ img {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
-  margin: 0 20px;
+  margin: 0 10px;
   width: 150px;
   height: 89%;
+  max-height: 500px;
   overflow-y: hidden;
 }
 
@@ -3750,4 +3751,7 @@ img {
 img:hover,
 .playlist-item:hover {
   cursor: pointer;
+}
+#up_arrow {
+  transform: scaleY(-1);
 }
