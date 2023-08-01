@@ -3729,7 +3729,7 @@ img {
   margin: 0 10px;
   width: 150px;
   height: 89%;
-  max-height: 500px;
+  overflow-x: auto;
   overflow-y: hidden;
 }
 
