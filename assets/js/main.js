@@ -686,7 +686,7 @@ function getPlaylistItems(pageToken) {
   return gapi.client.youtube.playlistItems
     .list({
       part: "snippet,contentDetails",
-      maxResults: 50, // This is the maximum available value, according to the google docs
+      maxResults: 25, // This is the maximum available value, according to the google docs
       playlistId: PLAYLIST_ID,
       pageToken,
     })
@@ -725,13 +725,19 @@ function createPlaylistItem(i, index) {
   var changeIndex = index;
   const item = document.createElement("div");
   item.classList.add("playlist-item");
+  item.classList.add("button");
   item.style.background = `url(https://i.ytimg.com/vi/${i.snippet.resourceId.videoId}/mqdefault.jpg) no-repeat center`;
   item.style.backgroundSize = "contain";
   item.id = index.toString();
   item.addEventListener("click", function () {
-    document.getElementById("iframe_yt").src =
-      "https://www.youtube.com/embed?listType=playlist&list=PLMC9KNkIncKtPzgY-5rmhvj7fax8fdxoj&autoplay=1&index=" +
-      changeIndex.toString();
+    const win = window.open(
+      "https://www.youtube.com/watch?v=" +
+        `${i.snippet.resourceId.videoId}` +
+        "&list=PLZG0CvngYU9jVlMUSUKxQ_Ondx-ocEw5P&index=" +
+        changeIndex.toString(),
+      "_blank"
+    );
+    win.focus();
   });
   return item;
 }
