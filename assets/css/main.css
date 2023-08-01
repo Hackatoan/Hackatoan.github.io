@@ -3727,8 +3727,8 @@ img {
   box-sizing: border-box;
   flex-direction: column;
   margin: 0 20px;
-  height: 550px;
   width: 150px;
+  height: 89%;
   overflow-y: hidden;
 }
 
