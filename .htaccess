@@ -1,0 +1,11 @@
+# 301 Redirect URLs.
+Redirect 301 /Lamar%20is%20here/pages/license.html /lamar/license
+Redirect 301 /Lamar%20is%20here/lamar.html /lamar
+Redirect 301 /Lamar%20is%20here/pages/team.html /lamar/team
+Redirect 301 /index.html /home
+
+# Prevent viewing of htaccess file.
+<Files .htaccess>
+    order allow,deny
+    deny from all
+</Files>
