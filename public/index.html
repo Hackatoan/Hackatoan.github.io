@@ -1,225 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <base href="./" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hackatoa</title>
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="icon" type="image/png" href="favicon.ico" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript>
-      <link rel="stylesheet" href="assets/css/noscript.css" />
-    </noscript>
+    <link
+      rel="shortcut icon"
+      href="assets/imgs/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
   </head>
-  <body class="is-preload">
-    <div id="page-wrapper">
-      <div id="wrapper">
-        <section class="panel banner right">
-          <div class="content color0 span-3-75">
-            <h1 class="major">Jacob P. Harris</h1>
-            <p>Hackatoa</p>
-            <ul class="actions">
-              <li>
-                <a
-                  href="#first"
-                  class="button primary color1 circle icon solid fa-angle-right"
-                  >Next</a
-                >
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="panel">
-          <img class="" src="assets/imgs/me.jpg" alt="" />
-        </section>
-        <!-- I am About -->
-        <section class="panel spotlight medium" id="first">
-          <div class="content span-7">
-            <h2 class="major">About Me</h2>
-            <p>
-              Hello, I'm Jacob, a Developer/Content Creator passionate about
-              Cyber Security. My goal is a rewarding career in this field,
-              unraveling complex issues and devising robust solutions. I
-              prioritize staying up-to-date on tech advancements and emerging
-              threats. Collaboration and communication are key to me. Let's
-              create a safer digital world together!
-            </p>
-          </div>
-          <div class="image filtered tinted" data-position="top left">
-            <img src="assets/imgs/hike2.jpg" alt="" />
-          </div>
-        </section>
-        <!-- Socials -->
-        <section class="panel color1">
-          <div class="intro joined">
-            <h2 class="major">Socials</h2>
-            <p>
-              I use all of my socials often, but I am most active on Discord and
-              Instagram. Click on any of the icons to open up that page.
-            </p>
-          </div>
-          <div class="inner">
-            <ul class="grid-icons three connected">
-              <li>
-                <a
-                  href="https://discord.gg/su7Wx79eZG"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="icon solid brands fa-discord"
-                    ><span class="label">Discord</span></span
-                  >
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/hackatoa/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="icon solid brands fa-instagram"
-                    ><span class="label">Main Instagram</span></span
-                  >
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/_baecob/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="icon solid brands fa-instagram"
-                    ><span class="label">Secondary Instagram</span></span
-                  >
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.twitch.tv/hackatoa"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="icon solid brands fa-twitch"
-                    ><span class="label">Twitch</span></span
-                  >
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://youtube.com/hackatoa"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="icon solid brands fa-youtube"
-                    ><span class="label">Youtube</span></span
-                  >
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com/JHackatoa"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="icon solid brands fa-twitter"
-                    ><span class="label">Twitter</span></span
-                  >
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.threads.net/@_baecob"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="icon solid brands fa-threads"
-                    ><span class="label">Threads</span></span
-                  >
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://snapchat.com/add/hackatoa"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="icon solid brands fa-snapchat"
-                    ><span class="label">Snapchat</span></span
-                  >
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://tidal.com/browse/playlist/7899f35c-1214-4f1f-98c4-b6cd358b2d07"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <span class="icon solid fa-music"
-                    ><span class="label">Tidal Music Playlist</span></span
-                  >
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <body>
+    <div class="overlay" id="overlay">
+      <section class="intro">
+        <h1>Hackatoa</h1>
+        <img
+          class="bigimg"
+          src="assets/imgs/me.jpg"
+          alt="picture of Jacob P. Harris"
+        />
+        <h3>Jacob P. Harris</h3>
+      </section>
+      <hr class="rounded" />
+      <section class="about">
+        <h2 class="center">About Me</h2>
+        <p>
+          Hello, I'm Jacob, a Developer/Content Creator passionate about Cyber
+          Security. My goal is a rewarding career in this field, unraveling
+          complex issues and devising robust solutions. I prioritize staying
+          up-to-date on tech advancements and emerging threats. Collaboration
+          and communication are key to me. Let's create a safer digital world
+          together!
+        </p>
+      </section>
+      <hr class="rounded" />
+      <section>
+        <img
+          class="bigimg"
+          src="/assets/imgs/hike2.jpg"
+          alt="Picture of hackatoa on a rock in a hike"
+        />
+      </section>
+      <hr class="rounded" />
+      <section class="socials-section">
+        <div class="intro">
+          <h2>Socials</h2>
+          <p>
+            I use all of my socials often, but I am most active on Discord and
+            Instagram. Click on any of the icons to open up that page.
+          </p>
+        </div>
+        <div class="icons">
+          <a
+            href="https://discord.gg/su7Wx79eZG"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-discord"></i><span>Discord</span>
+          </a>
+          <a
+            href="https://www.instagram.com/hackatoa/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-instagram"></i><span>Hackatoa</span>
+          </a>
+          <a
+            href="https://www.instagram.com/_baecob/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-instagram"></i><span>_baecob</span>
+          </a>
+          <a
+            href="https://www.twitch.tv/hackatoa"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-twitch"></i><span>Twitch</span>
+          </a>
+          <a
+            href="https://youtube.com/hackatoa"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-youtube"></i><span>Youtube</span>
+          </a>
+          <a
+            href="https://twitter.com/JHackatoa"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-twitter"></i><span>Twitter</span>
+          </a>
+          <a
+            href="https://www.threads.net/@_baecob"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-threads"></i><span>Threads</span>
+          </a>
+          <a
+            href="https://snapchat.com/add/hackatoa"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-snapchat"></i><span>Snapchat</span>
+          </a>
+          <a
+            href="https://www.youtube.com/playlist?list=PLZG0CvngYU9i8BQVur9DtUyOGOALdtorK"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fas fa-music"></i><span>Playlist</span>
+          </a>
+        </div>
+      </section>
+      <hr class="rounded" />
+      <section class="discord">
+        <widgetbot
+          server="838836392334327898"
+          channel="1112112531205542008"
+          width="100%"
+          height="600"
+        ></widgetbot>
+        <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+      </section>
+      <hr class="rounded" />
 
-        <!--Music Playlist-->
-        <section class="panel spotlight">
-          <div class="intro span-2">
-            <h2 class="major">Playlist</h2>
-            <p>
-              This is my
-              <a
-                href="https://www.youtube.com/playlist?list=PLZG0CvngYU9i8BQVur9DtUyOGOALdtorK"
-                target="_blank"
-                rel="noopener noreferrer"
-                >playlist.</a
-              >
-              Most of the time this is the playlist I use in the background of
-              my streams or sometimes videos. You can view the full playlist of
-              over 300 songs by opening the playlist on Youtube.
-            </p>
-          </div>
-          <div class="listplay">
-            <button id="btnup" class="fitbtn" onclick="goUp(this,100);">
-              UP
-            </button>
-            <div class="playlist"></div>
-            <button id="btndown" class="fitbtn" onclick="goDown(this,100);">
-              DOWN
-            </button>
-          </div>
-          <div class="image filtered tinted" data-position="top left">
-            <img src="assets/imgs/hike1.jpg" alt="" />
-          </div>
-        </section>
+      <section class="Lamar center">
+        <div>
+          <h2>Lamar bot</h2>
+          <p>
+            Hello, As you know i am a developer so i made a discord bot. His
+            name is lamar yes that lamar. Gta V lamar. So this is an extremley
+            racist discord bot with lots of ways to spam people. Learn more
+            about him at
+            <a href="./lamar.html">Hackatoa.com/Lamar</a>
+          </p>
+        </div>
+        <div>
+          <a href="/lamar.html">
+            <img class="bigimg" src="./assets/imgs/lamar.png" alt="" />
+          </a>
+        </div>
+      </section>
 
-        <!-- Lamar bot a discord bot by me -->
-        <section class="panel spotlight medium" id="first">
-          <div class="content span-6">
-            <h2 class="major">Lamar bot</h2>
-            <p>
-              Hello, As you know i am a developer so i made a discord bot. His
-              name is lamar yes that lamar. Gta V lamar. So this is an extremley
-              racist discord bot with lots of ways to spam people. Learn more
-              about him at
-              <a href="./lamar.html">Hackatoa.com/Lamar</a>
-            </p>
-          </div>
-          <div class="image filtered tinted" data-position="top left">
-            <img src="./assets/imgs/lamar.png" alt="" />
-          </div>
-        </section>
-        <!--ending stuff like copywrite and embed that go through whole page-->
+      <hr class="rounded" />
 
-        <div class="copyright">&copy; Hackatoa</div>
-      </div>
+      <section>
+        <div class="center">
+          <h2>Playlist</h2>
+          <p>
+            This is my
+            <a
+              href="https://www.youtube.com/playlist?list=PLZG0CvngYU9i8BQVur9DtUyOGOALdtorK"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              playlist</a
+            >. Most of the time this is the playlist I use in the background of
+            my streams or sometimes videos. You can view the full playlist of
+            over 100 songs by opening the playlist on Youtube. Nowadays just the
+            playlist I jam too.
+          </p>
+        </div>
+        <div class="listplay">
+          <button id="btnup" class="fitbtn" onclick="goUp(this,100);">
+            LEFT
+          </button>
+          <button id="btndown" class="fitbtn" onclick="goDown(this,100);">
+            RIGHT
+          </button>
+        </div>
+        <div class="playlist"></div>
+      </section>
+
+      <hr class="rounded" />
+      <section>
+        <img
+          class="bigimg"
+          src="/assets/imgs/hike1.jpg"
+          alt="Picture of hackatoa on a rock in a hike"
+        />
+      </section>
+      <footer id="footer">
+        <div class="footer-content">
+          <p>&copy; 2024 Hackatoa. All rights reserved.</p>
+        </div>
+        <img
+          class="imgright"
+          src="assets/imgs/hershey.jpg"
+          alt="picture of saint bernard"
+        />
+      </footer>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
+    <div id="instruction-text">Click the volcano</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
     <script src="https://apis.google.com/js/api.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/scripts/script.js"></script>
   </body>
 </html>

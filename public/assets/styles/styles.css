@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.overlay {
+  overflow-y: hidden;
+  position: relative;
+  z-index: 2;
+  margin: auto;
+  width: 80%;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 90vh;
+}
+.overlay::-webkit-scrollbar {
+  display: none;
+}
+.overlay {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.content {
+  margin: 0;
+  padding: 20px;
+}
+.intro {
+  text-align: center;
+  font-size: 2vw;
+}
+.about {
+  font-size: larger;
+}
+.bigimg {
+  opacity: 0.8;
+  max-width: 100%;
+}
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
+.center {
+  text-align: center;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.socials-section .intro {
+  margin-bottom: 20px;
+}
+
+.socials-section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.socials-section p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.socials-section .icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socials-section .icons a {
+  text-decoration: none;
+  color: #444;
+  font-size: 1em;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socials-section .icons a i {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.socials-section .icons a:hover {
+  transform: translateY(-5px);
+  color: #000;
+}
+
+.socials-section .icons a span {
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+  .socials-section .icons {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.playlist {
+  height: 300px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.playlist-item {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  transition: all 0.3s;
+}
+img:hover,
+.playlist-item:hover {
+  cursor: pointer;
+}
+.fitbtn {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 30px;
+  text-align: center;
+  padding: 0;
+  width: 40%;
+}
+.listplay {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.overlay {
+  overflow-y: hidden;
+  position: relative;
+  z-index: 2;
+  margin: auto;
+  width: 80%;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 90vh;
+  display: none; /* Initially hidden */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.overlay.visible {
+  display: block;
+  opacity: 1;
+}
+
+.overlay.hidden {
+  opacity: 0;
+}
+#instruction-text {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 3; /* Ensure it is above other elements */
+  font-weight: bold;
+}
+#footer {
+  opacity: 80%;
+  background-image: url("assets/imgs/bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 2; /* Ensure it is above other elements if necessary */
+}
+
+#footer .footer-content {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparent background for better text readability */
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
+.imgright {
+  height: 70px;
+  width: 70px;
+  float: right;
+  padding-right: 20px;
+}
