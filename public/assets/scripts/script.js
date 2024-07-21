@@ -222,6 +222,10 @@ function hideOverlay() {
 loader.load(
   "assets/models/volc.glb",
   function (gltf) {
+    if (overlay.style.display == "block") {
+      return;
+    }
+
     const object = gltf.scene;
     object.scale.set(10, 10, 10); // Adjust scale if needed
     object.position.set(0, 0, 0); // Adjust position if needed
