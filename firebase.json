@@ -2,13 +2,6 @@
   "hosting": {
     "public": "public",
     "cleanUrls": true,
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "redirects": [
-      {
-        "source": "/lamar",
-        "destination": "/lamar/",
-        "type": 301
-      }
-    ]
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   }
 }
