@@ -654,7 +654,7 @@ const API_ID =
 const PLAYLIST_ID = "PLZG0CvngYU9i8BQVur9DtUyOGOALdtorK";
 
 var videoVisible = 0;
-var maxVideoVisible = 500;
+var amount = 0;
 
 const playlistItems = [];
 const playlist = document.getElementsByClassName("playlist")[0];
@@ -681,12 +681,13 @@ function loadClient() {
       }
     );
 }
+var index = 0;
 
 function getPlaylistItems(pageToken) {
   return gapi.client.youtube.playlistItems
     .list({
       part: "snippet,contentDetails",
-      maxResults: 25, // This is the maximum available value, according to the google docs
+      maxResults: 200, // This is the maximum available value, according to the google docs
       playlistId: PLAYLIST_ID,
       pageToken,
     })
@@ -701,14 +702,13 @@ function getPlaylistItems(pageToken) {
 
         // It's up to you, how to handle the item from playlist.
         // Add `onclick` events to navigate to another video, or use another thumbnail image quality
-        var index = 0;
+
         items.forEach(function (item) {
           const thumbnailItem = createPlaylistItem(item, index);
           playlist.appendChild(thumbnailItem);
           index++;
+          amount++;
         });
-
-        maxVideoVisible = index - 3;
 
         // Recursively get another portion of items, if there any left
         if (nextPageToken) {
@@ -733,7 +733,7 @@ function createPlaylistItem(i, index) {
     const win = window.open(
       "https://www.youtube.com/watch?v=" +
         `${i.snippet.resourceId.videoId}` +
-        "&list=PLZG0CvngYU9jVlMUSUKxQ_Ondx-ocEw5P&index=" +
+        "&list=PLZG0CvngYU9i8BQVur9DtUyOGOALdtorK&index=" +
         changeIndex.toString(),
       "_blank"
     );
@@ -744,16 +744,36 @@ function createPlaylistItem(i, index) {
 
 // Before doing any action with the API ->
 initAPIClient();
-
-function goUp() {
+function goUp(button, delay) {
+  button.disabled = true;
   if (videoVisible > 0) {
+    document.getElementById("btndown").innerHTML = "DOWN";
     videoVisible--;
-    document.getElementById(videoVisible.toString()).style.height = "90px";
+    document.getElementById(videoVisible.toString()).style.height = "6rem";
   }
+  setTimeout(() => {
+    button.disabled = false;
+  }, delay); // delay is in seconds, so multiply by 1000 to convert to milliseconds
 }
-function goDown() {
-  if (videoVisible < maxVideoVisible) {
+function goDown(button, delay) {
+  button.disabled = true;
+  if (videoVisible < amount - 4) {
     document.getElementById(videoVisible.toString()).style.height = "0px";
     videoVisible++;
   }
+
+  if (document.getElementById("btndown").innerHTML == "View Full Playlist") {
+    window.open(
+      "https://www.youtube.com/playlist?list=PLZG0CvngYU9i8BQVur9DtUyOGOALdtorK"
+    );
+  }
+  if (videoVisible > amount - 5) {
+    document.getElementById("btndown").innerHTML = "View Full Playlist";
+  }
+  if (videoVisible > amount - 10) {
+    delay = delay * 3;
+  }
+  setTimeout(() => {
+    button.disabled = false;
+  }, delay); // delay is in seconds, so multiply by 1000 to convert to milliseconds
 }

@@ -4153,32 +4153,38 @@ body.is-preload #wrapper {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
-  margin: 0 10px;
-  width: 150px;
-  height: 89%;
+  height: 100%;
   overflow-x: auto;
   overflow-y: hidden;
 }
-
-.playlist-item {
+.listplay {
   display: flex;
   box-sizing: border-box;
-  width: 100%;
-  height: 90px;
+  flex-direction: column;
+  width: 150px;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-right: 1%;
+}
+.playlist-item {
+  max-width: 100%;
+  display: flex;
+  box-sizing: border-box;
   flex-shrink: 0;
+  height: 6rem;
   transition: all 0.3s;
-}
-.center_arrow {
-  width: 190px;
-  text-align: center;
-}
-#iframe_yt {
-  margin-top: 29px;
 }
 img:hover,
 .playlist-item:hover {
   cursor: pointer;
 }
-#up_arrow {
-  transform: scaleY(-1);
+.fitbtn {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: center;
+  padding: 0;
 }

@@ -178,28 +178,17 @@
               >
               Most of the time this is the playlist I use in the background of
               my streams or sometimes videos. You can view the full playlist of
-              over 300 songs by opening the playlist in Amazon music.
+              over 300 songs by opening the playlist on Youtube.
             </p>
           </div>
-          <div>
-            <div class="center_arrow">
-              <img
-                id="up_arrow"
-                alt="up arrow"
-                src="https://aux.iconspalace.com/uploads/drop-down-vector-icon-256.png"
-                width="25px"
-                onClick="goUp();"
-              />
-            </div>
+          <div class="listplay">
+            <button id="btnup" class="fitbtn" onclick="goUp(this,100);">
+              UP
+            </button>
             <div class="playlist"></div>
-            <div class="center_arrow">
-              <img
-                alt="down arrow"
-                src="https://aux.iconspalace.com/uploads/drop-down-vector-icon-256.png"
-                width="25px"
-                onClick="goDown();"
-              />
-            </div>
+            <button id="btndown" class="fitbtn" onclick="goDown(this,100);">
+              DOWN
+            </button>
           </div>
           <div class="image filtered tinted" data-position="top left">
             <img src="assets/imgs/hike1.jpg" alt="" />
@@ -207,8 +196,8 @@
         </section>
 
         <!-- Lamar bot a discord bot by me -->
-        <section class="panel spotlight medium right" id="first">
-          <div class="content span-7">
+        <section class="panel spotlight medium" id="first">
+          <div class="content span-6">
             <h2 class="major">Lamar bot</h2>
             <p>
               Hello, As you know i am a developer so i made a discord bot. His
@@ -219,11 +208,11 @@
             </p>
           </div>
           <div class="image filtered tinted" data-position="top left">
-            <img src="./lamar/assets/img/Bot.png" alt="" />
+            <img src="./assets/imgs/lamar.png" alt="" />
           </div>
         </section>
         <!--ending stuff like copywrite and embed that go through whole page-->
-        >
+
         <div class="copyright">&copy; Hackatoa</div>
       </div>
     </div>
