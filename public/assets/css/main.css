@@ -4188,3 +4188,18 @@ img:hover,
   text-align: center;
   padding: 0;
 }
+/* Make playlist horizontal on mobile devices */
+@media screen and (max-width: 736px) {
+  .playlist {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .playlist-item {
+    display: inline-block;
+    width: auto;
+    height: 100px; /* Adjust the height as necessary */
+    margin-right: 10px; /* Adjust spacing between items as necessary */
+  }
+}
