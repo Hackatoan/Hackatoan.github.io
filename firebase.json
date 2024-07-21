@@ -6,7 +6,7 @@
     "redirects": [
       {
         "source": "/lamar",
-        "destination": "/lamar/",
+        "destination": "/lamar/index.html",
         "type": 301
       }
     ]
