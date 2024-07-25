@@ -232,3 +232,9 @@ img:hover,
   float: right;
   padding-right: 20px;
 }
+.imgleft {
+  height: 70px;
+  width: 70px;
+  float: left;
+  padding-right: 20px;
+}
