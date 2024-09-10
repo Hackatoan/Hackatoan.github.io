@@ -45,7 +45,7 @@ canvas {
   text-align: center;
   font-size: 2vw;
 }
-.about {
+.about .socials-info{
   font-size: larger;
 }
 .bigimg {
@@ -237,4 +237,9 @@ img:hover,
   width: 70px;
   float: left;
   padding-right: 20px;
+}
+#hike1 {
+ max-height: 100px;
+ width: 100%;
+ object-fit: cover;
 }
