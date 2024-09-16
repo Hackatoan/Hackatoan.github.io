@@ -212,7 +212,9 @@ img:hover,
   border-radius: 5px;
   display: inline-block;
 }
-
+.footer-content {
+  width: max-content;
+}
 #footer a {
   color: white;
   text-decoration: none;
