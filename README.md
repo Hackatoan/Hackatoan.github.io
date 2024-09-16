@@ -1,3 +1,5 @@
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/hackatoa)
+
 # hackatoa.com
 
 Welcome to the GitHub repository for [hackatoa.com](https://hackatoa.com), my personal website! This README provides a quick overview of the project and the technologies used.
