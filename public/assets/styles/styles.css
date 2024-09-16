@@ -1,69 +1,77 @@
-body {
-  margin: 0;
-  font-family: "Arial", sans-serif;
-  overflow: hidden;
-  position: relative;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+.about .socials-info {
+  font-size: larger;
 }
-canvas {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+
+.bigimg {
+  max-width: 100%;
+  opacity: 0.8;
 }
-.overlay {
-  overflow-y: hidden;
-  position: relative;
-  z-index: 2;
-  margin: auto;
-  width: 80%;
-  max-width: 1000px;
-  background: rgba(65, 36, 4, 0.8);
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  overflow-y: auto;
-  max-height: 90vh;
+
+.center {
+  text-align: center;
 }
-.overlay::-webkit-scrollbar {
-  display: none;
-}
-.overlay {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
+
 .content {
   margin: 0;
   padding: 20px;
 }
+
 .intro {
-  text-align: center;
   font-size: 2vw;
-}
-.about .socials-info {
-  font-size: larger;
-}
-.bigimg {
-  opacity: 0.8;
-  max-width: 100%;
-}
-hr.rounded {
-  border-top: 8px solid #bbb;
-  border-radius: 5px;
-}
-.center {
   text-align: center;
 }
-body {
-  font-family: Arial, sans-serif;
-  background-color: wheat;
-  margin: 0;
-  padding: 0;
+
+.overlay {
+  -ms-overflow-style: none;
+  background: #412404cc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px #0000001a;
+  margin: auto;
+  max-height: 90vh;
+  max-width: 1000px;
+  overflow-y: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  position: relative;
+  scrollbar-width: none;
+  width: 80%;
+  z-index: 2;
+}
+
+.overlay::-webkit-scrollbar {
+  display: none;
+}
+
+.socials-section .icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.socials-section .icons a {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socials-section .icons a i {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.socials-section .icons a span {
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.socials-section .icons a:hover {
+  color: #000;
+  transform: translateY(-5px);
 }
 
 .socials-section .intro {
@@ -76,40 +84,37 @@ body {
 }
 
 .socials-section p {
+  color: #fff;
   font-size: 1.2em;
-  color: #ffffff;
 }
 
-.socials-section .icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.socials-section .icons a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 1em;
-  transition: transform 0.3s ease, color 0.3s ease;
+body {
+  background-color: #f5deb3;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  font-family: "Arial", sans-serif;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  margin: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
 }
 
-.socials-section .icons a i {
-  font-size: 2em;
-  margin-bottom: 5px;
+canvas {
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
-.socials-section .icons a:hover {
-  transform: translateY(-5px);
-  color: #000;
-}
-
-.socials-section .icons a span {
-  margin-top: 5px;
-  font-size: 0.9em;
+hr.rounded {
+  border-radius: 5px;
+  border-top: 8px solid #bbb;
 }
 
 @media (max-width: 600px) {
@@ -119,41 +124,131 @@ body {
   }
 }
 
-img:hover,
-.playlist-item:hover {
-  cursor: pointer;
+#fallback-volcano {
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
 }
-.fitbtn {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  box-sizing: border-box;
-  height: 30px;
+
+#footer {
+  background-image: url(assets/imgs/bg.jpeg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  opacity: 80%;
+  padding: 20px 0;
+  position: relative;
   text-align: center;
+  z-index: 2;
+}
+
+#footer .footer-content {
+  background-color: #00000080;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 10px;
+}
+
+#footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
+
+#hike1 {
+  max-height: 100px;
+  object-fit: cover;
+  width: 100%;
+}
+
+#hwa {
+  border-radius: 5px;
+  color: #ceba95;
+  font-size: 16px;
+  font-weight: 700;
+  left: 50%;
+  padding: 5px 10px;
+  position: absolute;
+  top: 10px;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+#instruction-text {
+  border-radius: 5px;
+  bottom: 10px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  left: 50%;
+  padding: 5px 10px;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.fitbtn {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 30px;
+  overflow: hidden;
   padding: 0;
+  text-align: center;
+  white-space: nowrap;
   width: 40%;
 }
+
+.footer-content {
+  width: max-content;
+}
+
+.imgleft {
+  float: left;
+  height: 70px;
+  padding-right: 20px;
+  width: 70px;
+}
+
+.imgright {
+  float: right;
+  height: 70px;
+  padding-right: 20px;
+  width: 70px;
+}
+
 .listplay {
+  padding-bottom: 10px;
   text-align: center;
   width: 100%;
-  padding-bottom: 10px;
 }
+
 .overlay {
-  overflow-y: hidden;
-  position: relative;
-  z-index: 2;
-  margin: auto;
-  width: 80%;
-  max-width: 1000px;
-  background: rgba(73, 35, 4, 0.8);
+  background: #492304cc;
   border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  overflow-y: auto;
+  box-shadow: 0 4px 10px #0000001a;
+  display: none;
+  margin: auto;
   max-height: 90vh;
-  display: none; /* Initially hidden */
+  max-width: 1000px;
   opacity: 0;
+  overflow-y: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  position: relative;
   transition: opacity 0.5s ease;
+  width: 80%;
+  z-index: 2;
+}
+
+.overlay.hidden {
+  opacity: 0;
 }
 
 .overlay.visible {
@@ -161,218 +256,97 @@ img:hover,
   opacity: 1;
 }
 
-.overlay.hidden {
-  opacity: 0;
-}
-#instruction-text {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: black;
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  z-index: 3; /* Ensure it is above other elements */
-  font-weight: bold;
-}
-#hwa {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: rgb(206, 186, 149);
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  z-index: 3; /* Ensure it is above other elements */
-  font-weight: bold;
-}
-
-#footer {
-  opacity: 80%;
-  background-image: url("assets/imgs/bg.jpeg");
-  background-size: cover;
-  background-position: center;
-  padding: 20px 0;
-  color: white;
-  text-align: center;
-  position: relative;
-  z-index: 2; /* Ensure it is above other elements if necessary */
-}
-
-#footer .footer-content {
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Semi-transparent background for better text readability */
-  padding: 10px;
-  border-radius: 5px;
-  display: inline-block;
-}
-.footer-content {
-  width: max-content;
-}
-#footer a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-#footer a:hover {
-  text-decoration: underline;
-}
-.imgright {
-  height: 70px;
-  width: 70px;
-  float: right;
-  padding-right: 20px;
-}
-.imgleft {
-  height: 70px;
-  width: 70px;
-  float: left;
-  padding-right: 20px;
-}
-#hike1 {
-  max-height: 100px;
-  width: 100%;
-  object-fit: cover;
-}
-#fallback-volcano {
-  position: absolute;
-  top: 50%; /* Position the image in the center vertically */
-  left: 50%; /* Position the image in the center horizontally */
-  transform: translate(-50%, -50%); /* Center the image perfectly */
-  width: 500px; /* Set appropriate size for the image */
-  height: auto; /* Maintain the aspect ratio */
-}
-.white {
-  color: white;
-}
-
-/* Scrollable playlist container */
 .playlist {
-  height: 300px;
-  display: flex;
-  flex-direction: row; /* Horizontal scrolling */
-  overflow-x: auto; /* Enable horizontal scrolling */
-  overflow-y: hidden; /* Disable vertical scrolling */
-  scroll-behavior: smooth; /* Smooth scrolling */
-  width: 100%;
   box-sizing: border-box;
-}
-
-/* Playlist items */
-.playlist-item {
-  width: 50%;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  flex-shrink: 0;
-  cursor: pointer;
-  margin-right: 10px;
-}
-
-/* Custom scrollbar styling */
-.playlist::-webkit-scrollbar {
-  height: 12px; /* Height of the horizontal scrollbar */
-}
-
-/* Remove scrollbar arrows */
-.playlist::-webkit-scrollbar-button {
-  display: none;
-}
-
-/* Scrollbar track (background) */
-.playlist::-webkit-scrollbar-track {
-  background: #8b4513; /* Brown color for the track */
-  border-radius: 10px; /* Rounded corners for the track */
-}
-
-/* Scrollbar thumb (indicator) */
-.playlist::-webkit-scrollbar-thumb {
-  background-color: #ffffff; /* White color for the scrollbar thumb */
-  border-radius: 50px; /* Make the scrollbar thumb circular */
-  border: 3px solid #8b4513; /* Adds a border around the thumb to make it more prominent */
-}
-
-/* Customize scrollbar for Firefox */
-.playlist {
+  box-sizing: border-box;
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  flex-direction: row;
+  height: 300px;
+  height: 300px;
+  overflow-x: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overflow-y: hidden;
+  padding: 0 10px 5px;
+  scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  scrollbar-color: #fff #8b4513;
+  scrollbar-color: #fff #8b4513;
   scrollbar-width: thin;
-  scrollbar-color: #ffffff #8b4513; /* White thumb on a brown track */
+  scrollbar-width: thin;
+  width: 100%;
+  width: 100%;
 }
-/* Container for playlist items */
+
 .playlist-item {
-  width: 33%;
-  background-size: cover;
+  background-position: center;
   background-position: center;
   background-repeat: no-repeat;
-  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: cover;
   cursor: pointer;
+  cursor: pointer;
+  flex-shrink: 0;
+  flex-shrink: 0;
   margin-right: 10px;
-  position: relative; /* Make it a positioned element for overlay */
+  margin-right: 10px;
+  position: relative;
+  width: 50%;
+  width: 33%;
 }
 
-/* Title overlay */
 .playlist-item .title {
-  position: absolute;
+  background: #000000b3;
   bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7); /* Dark background for better readability */
-  color: #ffffff; /* White text color */
-  padding: 10px;
-  text-align: center;
+  color: #fff;
   font-size: 14px;
+  left: 0;
   opacity: 0;
-  transition: opacity 0.3s ease; /* Fade-in effect */
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  transition: opacity 0.3s ease;
 }
 
-/* Show title on hover */
 .playlist-item:hover .title {
   opacity: 1;
 }
-/* Scrollable playlist container */
-.playlist {
-  height: 300px;
-  display: flex;
-  flex-direction: row; /* Horizontal scrolling */
-  overflow-x: auto; /* Enable horizontal scrolling */
-  overflow-y: hidden; /* Disable vertical scrolling */
-  scroll-behavior: smooth; /* Smooth scrolling */
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0px 10px 5px 10px; /* Decrease gap between playlist and scrollbar */
-}
 
-/* Custom scrollbar styling */
 .playlist::-webkit-scrollbar {
-  height: 12px; /* Height of the horizontal scrollbar */
+  height: 12px;
+  height: 12px;
 }
 
-/* Remove scrollbar arrows */
 .playlist::-webkit-scrollbar-button {
+  display: none;
   display: none;
 }
 
-/* Scrollbar track (background) */
-.playlist::-webkit-scrollbar-track {
-  background: #8b4513; /* Brown color for the track */
-  border-radius: 10px; /* Rounded corners for the track */
-}
-
-/* Scrollbar thumb (indicator) */
 .playlist::-webkit-scrollbar-thumb {
-  background-color: #ffffff; /* White color for the scrollbar thumb */
-  border-radius: 50px; /* Make the scrollbar thumb circular */
-  border: 3px solid #8b4513; /* Adds a border around the thumb to make it more prominent */
+  background-color: #fff;
+  background-color: #fff;
+  border: 3px solid #8b4513;
+  border: 3px solid #8b4513;
+  border-radius: 50px;
+  border-radius: 50px;
 }
 
-/* Customize scrollbar for Firefox */
-.playlist {
-  scrollbar-width: thin;
-  scrollbar-color: #ffffff #8b4513; /* White thumb on a brown track */
+.playlist::-webkit-scrollbar-track {
+  background: #8b4513;
+  background: #8b4513;
+  border-radius: 10px;
+  border-radius: 10px;
+}
+
+.white {
+  color: #fff;
+}
+
+img:hover,
+.playlist-item:hover {
+  cursor: pointer;
 }
