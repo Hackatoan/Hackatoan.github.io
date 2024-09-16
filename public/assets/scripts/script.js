@@ -378,5 +378,10 @@ playlist.addEventListener("wheel", function (event) {
   event.preventDefault(); // Prevent the default vertical scrolling behavior
 
   // Scroll horizontally by adjusting the scrollLeft property
-  playlist.scrollLeft += playlist.offsetWidth * 0.33; // Use vertical scroll value for horizontal movement
+  if (event.deltaY > 0) {
+    playlist.scrollLeft += playlist.offsetWidth * 0.5; // Use vertical scroll value for horizontal movement
+  }
+  if (event.deltaY < 0) {
+    playlist.scrollLeft -= playlist.offsetWidth * 0.5;
+  }
 });
