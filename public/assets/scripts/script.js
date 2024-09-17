@@ -216,6 +216,7 @@ if (isWebGLSupported()) {
 }
 
 // =================== Playlist Setup ===================
+//API Key is orgin restricted.
 const API_KEY = "AIzaSyB58fVAN2Q2P3z3kLwI_KnPX7rs20TTMDA";
 const API_ID =
   "491927014195-cve61bomorg41tg8k51n9hv4etpjglne.apps.googleusercontent.com";
