@@ -4,7 +4,6 @@
 
 .bigimg {
   max-width: 100%;
-  opacity: 0.8;
 }
 
 .center {
@@ -23,7 +22,7 @@
 
 .overlay {
   -ms-overflow-style: none;
-  background: #412404cc;
+  background: #412404;
   border-radius: 8px;
   box-shadow: 0 4px 10px #0000001a;
   margin: auto;
@@ -230,7 +229,7 @@ hr.rounded {
 }
 
 .overlay {
-  background: #492304cc;
+  background: #492304ef;
   border-radius: 8px;
   box-shadow: 0 4px 10px #0000001a;
   display: none;
